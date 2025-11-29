@@ -120,7 +120,7 @@ def create_q_network() -> tf.keras.Model:
     model.compile(
         optimizer=tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE),
         loss=tf.keras.losses.MeanSquaredError(),
-        metrics=["mae"],  # Mean Absolute Error for monitoring
+        metrics=["mae"],  
     )
     
     return model

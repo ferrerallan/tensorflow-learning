@@ -381,11 +381,11 @@ def choose_action_from_model(
     # Choose action with highest Q-value
     best_action_index = int(np.argmax(predicted_q_values))
 
-    # ---------------- IMPRESSÃO ESTILO "IA EM AÇÃO" ----------------
-    os.system('cls' if os.name == 'nt' else 'clear')  # limpa terminal pra efeito bonito
+    # DEBUGGING
+    os.system('cls' if os.name == 'nt' else 'clear') 
 
     print("\n" + "="*55)
-    print("🔵 IA THINKING...".center(55))
+    print("🔵 MODEL PREDICTION...".center(55))
     print("="*55)
 
     print("\nSTATE VECTOR (normalized):")
@@ -397,10 +397,10 @@ def choose_action_from_model(
     print(f"  DOWN : {predicted_q_values[2]: .3f}")
 
     action_name = ["UP", "STAY", "DOWN"][best_action_index]
-    print(f"\n👉 ACTION CHOSEN → {action_name}")
+    print(f"\nBest Action → {action_name}")
 
     print("="*55 + "\n")
-    # --------------------------------------------------------------
+    
     
     return ALL_ACTIONS[best_action_index]
 
@@ -479,7 +479,7 @@ def run_game(
     # Initialize Pygame
     pygame.init()
     screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-    pygame.display.set_caption("Obstacles Game - Q-like")
+    pygame.display.set_caption("Deep Learning - POC")
     font = pygame.font.SysFont("Arial", 24)
     clock = pygame.time.Clock()
     
