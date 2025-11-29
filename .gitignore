@@ -1,0 +1,75 @@
+# Python Virtual Environment
+venv/
+env/
+ENV/
+.venv
+.env
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# TensorFlow / Keras
+*.h5
+*.hdf5
+*.pb
+*.ckpt
+*.keras
+checkpoint
+saved_model/
+
+# TensorBoard Logs
+logs/
+tensorboard_logs/
+**/logs/
+
+# Datasets (CSV files can be large)
+*.csv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.cache
+
+# Model files (optional - uncomment if you want to track models)
+# models/
+# behavior_cloning/model.h5
+# reward_shaping_qlike/model_qvalues.h5
+
